@@ -1,3 +1,5 @@
+#I got to use index method
+
 def roll_call_dwarves(names)
   e = 0 
   while e < names.length 
@@ -6,6 +8,8 @@ def roll_call_dwarves(names)
     e += 1 
   end 
 end
+
+#I got to use map or collect method
 
 def summon_captain_planet(elements)
   cap_elements = []
@@ -17,6 +21,8 @@ def summon_captain_planet(elements)
   cap_elements
 end
 
+
+
 def long_planeteer_calls(assorted_words) 
   e = 0 
   if  assorted_words.any? {|e| e.length > 4}
@@ -26,6 +32,8 @@ def long_planeteer_calls(assorted_words)
     e += 1
   end 
 end
+
+#I got to use include method
 
 def find_the_cheese(snacks)
   cheese_types = ["cheddar", "gouda", "camembert"]
