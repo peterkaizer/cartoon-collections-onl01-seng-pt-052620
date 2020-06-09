@@ -15,12 +15,7 @@ def summon_captain_planet(planeteer_calls)
 end
 
 def long_planeteer_calls(calls_long)
-  i = 0 
-  if calls_long.any? {|sound| sound.length > 4}
-    return true 
-  else
-    return false 
-    i += 1 
+  calls_long.any? {|sound| sound.length > 4}
   end
 end
 
@@ -28,4 +23,14 @@ def find_the_cheese(soup)
     cheese_types = ["cheddar", "gouda", "camembert"]
     soup.find {|type| cheese_types.include?(type)}
 end
+
+# def long_planeteer_calls(calls_long)
+#   i = 0 
+#   if calls_long.any? {|sound| sound.length > 4}
+#     return true 
+#   else
+#     return false 
+#     i += 1 
+#   end
+# end
 
