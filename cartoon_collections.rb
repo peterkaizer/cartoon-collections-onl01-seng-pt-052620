@@ -26,8 +26,6 @@ end
 
 def find_the_cheese(soup)
     cheese_types = ["cheddar", "gouda", "camembert"]
-    soup.find do |type|
-    cheese_types.include?(type)
-  end 
+    soup.find {|type| cheese_types.include?(type)}
 end
 
