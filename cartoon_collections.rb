@@ -1,43 +1,33 @@
-#I got to use index method
-
-def roll_call_dwarves(names)
-  e = 0 
-  while e < names.length 
-  
-    print "#{e + 1}. #{names[e]}"
-    e += 1 
-  end 
+def roll_call_dwarves(list)
+ number_order = []
+ list.each_with_index {|name, number| number_order.push("#{number += 1} : #{name}")}
+ print number_order
 end
 
-#I got to use map or collect method
-
-def summon_captain_planet(elements)
-  cap_elements = []
-  e = 0 
-  while e < elements.length 
-    cap_elements << elements[e].capitalize + "!"
-    e += 1 
-  end 
-  cap_elements
+def summon_captain_planet(planeteer_calls)
+  new_calls = []
+  i = 0
+  while i < planeteer_calls.length
+    new_calls.push (planeteer_calls[i].capitalize + "!")
+    i += 1
+  end
+ new_calls
 end
 
-
-
-def long_planeteer_calls(assorted_words) 
-  e = 0 
-  if  assorted_words.any? {|e| e.length > 4}
-    return true
-  else 
-    return false
-    e += 1
-  end 
+def long_planeteer_calls(calls_long)
+  i = 0 
+  if calls_long.any? {|sound| sound.length > 4}
+    return true 
+  else
+    return false 
+    i += 1 
+  end
 end
 
-#I got to use include method
-
-def find_the_cheese(snacks)
-  cheese_types = ["cheddar", "gouda", "camembert"]
-    snacks.find do |type|
+def find_the_cheese(soup)
+    cheese_types = ["cheddar", "gouda", "camembert"]
+    soup.find do |type|
     cheese_types.include?(type)
   end 
 end
+
